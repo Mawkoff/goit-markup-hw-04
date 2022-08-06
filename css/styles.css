@@ -612,16 +612,61 @@ color: var(--main-title-color);
 .team-list-text {
 text-align: center;
 
+margin-bottom: 16px;
+
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 
 color: var(--adress-prime-color)
+
+
 }
 
 
+/* ------------SOCIES---------- */
+
+.item-soc {
+display: flex;
+justify-content: center;
+gap: 10px;
+
+
+    list-style: none;
+
+}
+
+.item-soc-link {
+display: flex;
+justify-content: center;
+align-items: center;
+
+list-style: none;
+text-decoration: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: turquoise;
+
+}
+
+.item-soc-link:hover .link-icon,
+.item-soc-link:focus .link-icon {
+background-color: var(--primary-white-color)
+}
+
+
+.link-icon {
+    
+fill: #AFB1B8;
+
+    height: 20px;
+    width: 20px;
+
+}
+
 /* 
-------------KLIENTS--------------- */
+------------CLIENTS--------------- */
 
 .clients {
     display: flex;
