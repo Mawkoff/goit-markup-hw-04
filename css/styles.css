@@ -662,7 +662,7 @@ text-decoration: none;
 .item-soc-link:hover .link-icon,
 .item-soc-link:focus .link-icon  {
 
-background-color: var(--second-title-color);
+
 fill: var(--primary-white-color);
 
 
@@ -674,6 +674,11 @@ fill: var(--primary-white-color);
     border-color: var(--second-title-color);
 }
 
+.item-soc-link:focus,
+.item-soc-link:hover {
+
+    background-color: var(--second-title-color);
+}
     
 .link-icon {
     
