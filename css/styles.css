@@ -632,8 +632,7 @@ display: flex;
 justify-content: center;
 gap: 10px;
 
-
-    list-style: none;
+list-style: none;
 
 }
 
@@ -644,6 +643,7 @@ justify-content: center;
 align-items: center;
 list-style: none;
 text-decoration: none;
+
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -652,87 +652,80 @@ text-decoration: none;
 
 }
 
-.item-soc-link:hover, .link-icon  {
+.item-soc-link:hover .link-icon,
+.item-soc-link:focus .link-icon  {
 
-
-fill: #FFFFFF;
-
-background-color: #2196F3;
+background-color: var(--second-title-color);
+fill: var(--primary-white-color);
 
 
 }
 
+.link-icon:hover,
+.link-icon:focus {
 
+    border-color: var(--second-title-color);
+}
+
+    
 .link-icon {
     
-
-
     height: 20px;
     width: 20px;
 
 }
 
-
-
-
-
-
 /* 
 ------------CLIENTS--------------- */
 
 .clients {
+
     display: flex;
     justify-content: center;
     gap: 30px;
     list-style: none;
     
-    
 }
 
-.clients-list {
 
-/* display: flex;
-    
-width: 170px;
-height: 92px;
-
-border: 1px solid #AFB1B8;
-border-radius: 4px;
-
-margin-bottom: 94px; */
-}
 
 .clients-type:hover .partner-foto,
 .clients-type:focus .partner-foto {
     
-    border-color: #2196F3
-    fill: #2196F3;
-    
+    fill: var(--second-title-color);
     
 }
     
 .clients-type { 
 display: flex;
 
+align-items: center;
+justify-content: center;
 
 width: 170px;
 height: 92px;
-
+border-color: var(--second-title-color);
 border: 1px solid #AFB1B8;
 border-radius: 4px;
 
 margin-bottom: 94px;
+
+
     
+}
+
+.clients-type:hover,
+.clients-type:focus {
+
+    border-color: var(--second-title-color);
+
 }
 
 .partner-foto {
 
    fill: #AFB1B8;
     
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
+    
 
 }
 
@@ -757,8 +750,15 @@ padding-bottom: 60px;
     
 }
 
-.footer-title-list {
+.footer {
+    display: flex;
     
+}
+
+.footer-up {
+    display: block;
+    width: 231px;
+    margin-right: 70px;
 }
 
 .info-logo {
@@ -846,127 +846,65 @@ color: rgba(255, 255, 255, 0.6);
 
 /* ---------FOOTER SOCIES--------- */
 
-/* .foot-container {
-    display: flex;
-    
-    justify-content: center;
-    
-    
+.footer-social {
+
+display: block;
+height: 80px;
+width: 206px;
+margin-top: 12px;
+
 }
-
-
 .footer-title {
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+    color: var(--primary-white-color);
 
-color: #FFFFFF;
-text-align: center;
 }
-
-
 .footer-soc {
-    display: flex;
-    list-style: none;
     
-    
-}
-
-
-.footer-soc-list {
-    color: #2a2d51;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    gap: 10px;
-   
-    align-items: center;
-    justify-content: center;
-}
-
-
-.footer-soc-link:hover,
-.footer-soc-link:focus 
- {
-   background-color: var(--second-title-color);
-}
-
-
-.link {
-}
-
-
-.footer-icon {
-fill: #FFFFFF;
-} */
-
-
-.footer-container {
-margin-left: 70px;
-}
-
-.footer-title {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-
-color: #FFFFFF;
-text-align: center;
-
-
-
-}
-
-.footer-soc {
+display: flex;
 gap: 10px;
-display: flex;
-list-style: none;
-justify-content: center;
-margin-top: 20px;
+
 }
+
 
 .footer-soc-list {
-    
+    list-style: none;
+
 
 }
-
 .footer-soc-link {
-display: flex;
+display: block;
+color: var(--primary-white-color);
+border-color: rgba(30, 202, 24, 0.1);
+border-radius: 50%;
+fill: currentColor;
+
+
+}
+.link {
+
+
+}
+.footer-icon {
+display: block;
 width: 44px;
 height: 44px;
-border-radius: 50%;
-background: rgba(255, 255, 255, 0.1);
-background-size: contain;
-background-repeat: no-repeat;
-align-items: center;
-justify-content: center;
+padding: 0 12px;
 
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
+    color: var(--primary-white-color);
     background-color: var(--second-title-color);
 }
 
-.footer-soc-link:hover .footer-icon,
-.footer-soc-link:focus .footer-icon {
-    fill: var(--second-title-color);
-}
-
-.link {
-
-}
-
-.footer-icon {
-    fill: #FFFFFF;
-
-}
 
 
 
