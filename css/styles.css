@@ -355,7 +355,7 @@ background-image: url(../images/command.jpg);
 background-repeat: no-repeat;
 
 background-size: cover;
-background-image:linear-gradient() rgba(47, 48, 58, 0.4);
+background-imageu:linear-gradient() rgba(47, 48, 58, 0.4);
 
 
 }
@@ -411,9 +411,13 @@ padding-left: 32px;
     cursor: pointer;
     margin: 0 auto;
     display: block;
-    
 
+}
 
+.hero-button:focus,
+.hero-button:hover {
+    color: var(--primary-white-color);
+    background-color: #188CE8;
 }
 
 /* ------------ABOUT */
