@@ -351,11 +351,11 @@ justify-content: center;
     
 background-color: #2F303A;
 
-background-image: url(../images/command.jpg);
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/command.jpg);
 background-repeat: no-repeat;
 
 background-size: cover;
-background-imageu:linear-gradient() rgba(47, 48, 58, 0.4);
+
 
 
 }
@@ -439,11 +439,12 @@ padding-left: 32px;
 }
 
 .svg-image {
-
+display: flex;
+align-items: center;
+justify-content: center;
 width: 270px;
 height: 120px;
-left: 215px;
-top: 774px;
+
 
 background: #F5F4FA;
 border-radius: 4px;
@@ -455,10 +456,7 @@ margin-bottom: 30px;
 .svg-icon {
     width: 70px;
     height: 70px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-right: 100px;
-    margin-left: 100px;
+    
     
 }
 
@@ -507,6 +505,7 @@ color: var(--adress-prime-color)
 /* ----------WORK------------- */
 
 .work-about-foto {
+    
 
     display: flex;
     gap: 30px;
@@ -597,6 +596,7 @@ text-decoration: none;
     
 }
 .team-item {
+    background-color: var(--primary-white-color);
 
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
@@ -701,7 +701,7 @@ fill: var(--primary-white-color);
 .clients {
 
     display: flex;
-    justify-content: center;
+    
     gap: 30px;
     list-style: none;
     
@@ -728,7 +728,7 @@ border-color: var(--second-title-color);
 border: 1px solid #AFB1B8;
 border-radius: 4px;
 
-margin-bottom: 94px;
+
 
 
     
@@ -772,6 +772,8 @@ padding-bottom: 60px;
 
 .footer {
     display: flex;
+
+    align-items: baseline;
     
 }
 
@@ -868,10 +870,7 @@ color: rgba(255, 255, 255, 0.6);
 
 .footer-social {
 
-display: block;
-height: 80px;
-width: 206px;
-margin-top: 12px;
+
 
 }
 .footer-title {
@@ -883,6 +882,7 @@ margin-top: 12px;
     text-transform: uppercase;
     
     color: var(--primary-white-color);
+    margin-bottom: 20px;
 
 }
 .footer-soc {
@@ -900,8 +900,10 @@ gap: 10px;
 }
 .footer-soc-link {
 display: block;
+
 color: var(--primary-white-color);
-border-color: rgba(30, 202, 24, 0.1);
+background: rgba(255, 255, 255, 0.1);
+
 border-radius: 50%;
 fill: currentColor;
 
@@ -970,7 +972,7 @@ body {
 
 .team-text:hover,
 .team-text:focus {
-    box-shadow: #F5F4FA, #ddd8f7, #c0b5f7, #b2a3fb;
+    
 }
 
 
@@ -991,19 +993,14 @@ color: var(--main-title-color);
 }
 
 
-.projects-list:hover,
-.projects-list:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.projects-button:hover,
+.projects-button:focus {
+
+    color: var(--primary-white-color);
+    background-color: var(--second-title-color);
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
 }
 
-.projects-button:hover,
-.projects-button:focus
-{
-    color: var(--primary-white-color);
-    background-color: var(--second-title-color)
-    
-    
-}
 
 .button-color {
 
@@ -1095,9 +1092,15 @@ text-decoration: none;
 
     
 }
-.development-list:hover {
+
+.development-foto:hover,
+.development-foto:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+}
+
+.development-list {
     
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
 
